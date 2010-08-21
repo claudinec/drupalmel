@@ -1,3 +1,11 @@
-sites/default/settings.php
-sites/default/files
+sites/*/settings.php
+sites/*/files
 sites/default/database/dump.sh
+
+# Project
+*.kpf
+*.komodoproject
+*.project
+*.nbproject
+
+.DS_Store
