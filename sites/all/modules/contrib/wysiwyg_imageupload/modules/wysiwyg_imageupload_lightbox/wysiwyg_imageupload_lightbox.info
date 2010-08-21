@@ -7,9 +7,9 @@ package = Drupal Wiki
 core = "6.x"
 project = "wysiwyg_imageupload_lightbox"
 
-; Information added by drupal.org packaging script on 2010-06-18
-version = "6.x-2.0-rc6"
+; Information added by drupal.org packaging script on 2010-08-05
+version = "6.x-2.2"
 core = "6.x"
 project = "wysiwyg_imageupload"
-datestamp = "1276878308"
+datestamp = "1281009708"
 

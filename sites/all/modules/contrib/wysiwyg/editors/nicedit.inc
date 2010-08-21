@@ -66,16 +66,12 @@ function wysiwyg_nicedit_settings($editor, $config, $theme) {
   );
 
   // Add configured buttons or all available.
-  if (!empty($config['toolbar'])) {
+  if (!empty($config['buttons'])) {
     $buttons = array();
-    foreach ($config['toolbar'] as $row) {
-      foreach ($row as $group) {
-        foreach ($group as $button) {
-          $buttons[] = $button['button'];
-        }
-      }
+    foreach ($config['buttons'] as $plugin) {
+      $buttons = array_merge($buttons, $plugin);
     }
-    $settings['buttonList'] = $buttons;
+    $settings['buttonList'] = array_keys($buttons);
   }
   else {
     $settings['fullPanel'] = TRUE;
@@ -89,7 +85,7 @@ function wysiwyg_nicedit_settings($editor, $config, $theme) {
         $settings['externalCSS'] = base_path() . $css;
       }
     }
-    elseif ($config['css_setting'] == 'self' && isset($config['css_path'])) {
+    else if ($config['css_setting'] == 'self' && isset($config['css_path'])) {
       $settings['externalCSS'] = strtr($config['css_path'], array('%b' => base_path(), '%t' => path_to_theme()));
     }
   }
