@@ -56,9 +56,9 @@ skinr[grid12-width] =
 ;skinr[fusion-example-styles][options][1][label] = My sample Skinr style
 ;skinr[fusion-example-styles][options][1][class] = fusion-example-stylename
 
-; Information added by drupal.org packaging script on 2010-02-14
-version = "6.x-1.0-rc1"
+; Information added by drupal.org packaging script on 2010-07-08
+version = "6.x-1.0"
 core = "6.x"
 project = "fusion"
-datestamp = "1266132306"
+datestamp = "1278618609"
 

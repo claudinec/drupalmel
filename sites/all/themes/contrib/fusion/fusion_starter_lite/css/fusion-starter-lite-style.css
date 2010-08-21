@@ -1,4 +1,4 @@
-/* $Id: fusion-starter-style.css,v 1.1.2.7 2010/07/04 01:51:31 sociotech Exp $ */
+/* $Id: fusion-starter-lite-style.css,v 1.1.2.1 2010/06/17 07:54:57 sociotech Exp $ */
 
 /* Basic Typography & Colors
 -------------------------------------------------------------- */
@@ -23,12 +23,6 @@ a:active {
 /* Specific Typography
 -------------------------------------------------------------- */
 #site-name {
-  font-size: 300%;
-  line-height: 150%;
-}
-
-.footer-message {
-  font-size: 90%;
 }
 
 
@@ -39,11 +33,6 @@ body {
 
 /* Site Info
 -------------------------------------------------------------- */
-/* Wrapper around logo, site name, and slogan */
-.header-site-info span {
-  display: block;
-}
-
 /* Add float here to put logo and site name side by side, also add margins as
   needed */
 #logo {
@@ -62,45 +51,17 @@ body {
 
 
 /* Regions
-
-  Classes (.region-name) should always be used instead of IDs (#region-name) so
-  that Skinr styles can override them with a class later
 -------------------------------------------------------------- */
 
 /* All Regions
 -------------------------------------------------------------- */
-/* By default this wrapper is set to 100% width and centered -- override here to
-  narrow wrapper or align left or right */
 .page {
 }
 
-/* The 0 values here remove padding and spacing at the bottom of the page.
-  Remove to add a gap at the very bottom of the page */
-.page-inner {
-  border: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-
-/* Header Regions
+/* Site info + Header Region
 -------------------------------------------------------------- */
-/* Header Top region to the bottom of Header region */
-/* For full-width header background, add background image/color here */
-.header-group-wrapper {
-}
-
 .header-group {
 }
-
-/* Header Top region which sits above the header */
-/* Works well with inline login or inline menu block style */
-.header-top-wrapper {
-}
-
-.header-top {
-}
-
 
 /* Primary Menu
 /-------------------------------------------------------------- */
@@ -152,7 +113,6 @@ body {
 .primary-menu-inner ul.sf-menu li ul li.sfHover {
 }
 
-
 /* Secondary menu
 -------------------------------------------------------------- */
 /* This menu usually appears in the header as a set of simple text links */
@@ -182,7 +142,6 @@ body {
 .secondary-menu-inner ul.links li a.active {
 }
 
-
 /* Header - Search
 -------------------------------------------------------------- */
 .search-box {
@@ -197,33 +156,10 @@ body {
 .search-box-inner input#edit-search-theme-form-header {
 }
 
-
-/*  Preface Regions
+/*  Main Area (content + sidebars)
 -------------------------------------------------------------- */
-/* The Preface Top region sits between the header and the Main Area
- (columns, sidebars, and main content).  The Preface Bottom region
- is inside the Main Area. */
-.preface-top-wrapper {
+.main {
 }
-
-.preface-top {
-}
-
-.preface-top-inner {
-}
-
-.preface-bottom {
-}
-
-.preface-bottom-inner {
-}
-
-
-/*  Main Area (content + sidebars + preface bottom + postscript top)
--------------------------------------------------------------- */
-.main-wrapper {
-}
-
 
 /* Sidebar Regions
 -------------------------------------------------------------- */
@@ -234,71 +170,21 @@ body {
 .sidebar-last {
 }
 
-
 /* Content Regions
 -------------------------------------------------------------- */
-.content-top {
-}
-
 .content {
 }
 
-.content-inner {
-}
-
-.content-bottom {
-}
-
-/* This region only appears on full node pages. It's useful for ads or other
-  content between the body of the node and its comments */
-.node-bottom {
-}
-
-/*  Postscript & Footer Regions
+/*  Footer Region
 -------------------------------------------------------------- */
-.postscript-top {
-}
-
-.postscript-top-inner {
-}
-
-.postscript-bottom-wrapper {
-}
-
-.postscript-bottom {
-}
-
-.postscript-bottom-inner {
-}
-
-.footer-wrapper {
-}
-
 .footer {
 }
-
-.footer-inner {
-}
-
-.footer-message-wrapper {
-}
-
-.footer-message {
-}
-
-.footer-message-inner {
-}
-
-.footer-message-text {
-}
-
 
 /* Page titles
 /-------------------------------------------------------------- */
 /* Page and full node titles */
 h1.title {
 }
-
 
 /* Default node styles
 /-------------------------------------------------------------- */
@@ -382,12 +268,10 @@ div.content-help-inner div.help {
   color: #aa1144;
 }
 
-
 /* Default block title styles
 /-------------------------------------------------------------- */
 h2.block-title {
 }
-
 
 /* Breadcrumbs
 -------------------------------------------------------------- */
@@ -396,84 +280,6 @@ h2.block-title {
 
 .breadcrumbs a:link,
 .breadcrumbs a:visited {
-}
-
-
-/* Tab Menus
-/-------------------------------------------------------------- */
-#content-tabs {
-  background-color: transparent;
-  float: left; /* LTR */
-  margin: 20px 0;
-  padding: 0;
-}
-
-#content-tabs ul.primary,
-#content-tabs ul.secondary {
-  border-bottom: 1px solid #000;
-  clear: both;
-  float: left; /* LTR */
-  margin: 0;
-  padding: 0 10px;
-}
-
-#content-tabs ul.secondary {
-  border-bottom: 1px solid #555;
-  margin-top: 10px;
-  text-transform: lowercase;
-}
-
-#content-tabs ul.primary li,
-#content-tabs ul.secondary li {
-  border-style: none;
-  display: inline;
-  float: left; /* LTR */
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-#content-tabs ul.primary li a:link,
-#content-tabs ul.primary li a:visited,
-#content-tabs ul.secondary li a:link,
-#content-tabs ul.secondary li a:visited {
-  background-color: transparent;
-  border: none;
-  color: #000;
-  float: left; /* LTR */
-  font-weight: bold;
-  margin: 0;
-  padding: 0 0 6px 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-#content-tabs ul.secondary li a:link,
-#content-tabs ul.secondary li a:visited {
-  color: #555;
-}
-
-#content-tabs ul.primary li a.active:link,
-#content-tabs ul.primary li a.active:visited {
-  border-bottom: 4px solid #000;
-  color: #555;
-  padding-bottom: 2px;
-}
-
-#content-tabs ul.secondary li a.active:link,
-#content-tabs ul.secondary li a.active:visited {
-  border-bottom: 4px solid #555;
-  color: #777;
-  padding-bottom: 2px;
-}
-
-#content-tabs ul.primary li a:hover,
-#content-tabs ul.primary li a:focus,
-#content-tabs ul.secondary li a:hover,
-#content-tabs ul.secondary li a:focus {
-  border-bottom: 4px solid #777;
-  color: #777;
-  padding-bottom: 2px;
 }
 
 /* Pagers
@@ -692,111 +498,6 @@ div.poll div.bar div.foreground {
 /* Styles for sub-headings on user profiles */
 .profile dt {
   background-color: #ccc;
-}
-
-
-/* Ubercart - catalog
-/-------------------------------------------------------------- */
-
-/* Horizontal list of subcategories in catalog */
-ul.uc-categories {
-}
-
-.uc-categories li a {
-  font-weight: bold;
-  padding: 0 5px 0 3px;
-}
-
-/* Product and category names */
-.catalog-grid-title a:link,
-.catalog-grid-title a:visited,
-.category a:link,
-.category a:visited {
-}
-
-.catalog-grid-title a:hover,
-.catalog-grid-title a:focus,
-.category a:hover,
-.category a:focus {
-}
-
-/* Sell price in Ubercart catalog */
-.category-grid-products .catalog-grid-sell-price {
-}
-
-/* Ubercart - add to cart buttons
-/-------------------------------------------------------------- */
-
-/* Add to cart buttons */
-input.node-add-to-cart,
-input.list-add-to-cart {
-}
-
-/* Hover and focus styles, with .hover class added for IE6 support */
-input.node-add-to-cart:hover,
-input.node-add-to-cart.hover,
-input.node-add-to-cart:focus,
-input.list-add-to-cart:hover,
-input.list-add-to-cart.hover,
-input.list-add-to-cart:focus {
-}
-
-/* Ubercart - product nodes
-/-------------------------------------------------------------- */
-
-#field-group {
-}
-
-#price-group {
-}
-
-/* Product images */
-.product-image a img {
-}
-
-.product-image a:hover img,
-.product-image a:focus img {
-}
-
-/* Display price on full product nodes */
-.full-node .product-group .uc-price-display {
-}
-
-/* Product attributes on full nodes */
-.full-node .product-group .attributes {
-}
-
-/* Ubercart - general / checkout
-/-------------------------------------------------------------- */
-
-/* For optional "Powered by Ubercart" footer message */
-#store-footer {
-}
-
-#store-footer a:link,
-#store-footer a:visited {
-}
-
-/* View cart/Checkout links in Ubercart cart block */
-.cart-block-summary-links ul.links li a {
-}
-
-.cart-block-summary-links ul.links li.cart-block-checkout a:link,
-.cart-block-summary-links ul.links li.cart-block-checkout a:visited {
-}
-
-/* Key checkout process buttons: Checkout, Continue, and Submit Order */
-#uc-cart-view-form #edit-checkout,
-#uc-cart-checkout-form #edit-continue,
-#uc-cart-checkout-review-form #edit-submit {
-}
-
-/* Table on final order review page */
-.order-review-table {
-}
-
-#cart-form-products table th {
-  border-bottom: 3px solid #dec2c3;
 }
 
 
